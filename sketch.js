@@ -33,14 +33,14 @@ function draw()
 background(200,50,10);
 
 
-image(GIF,0,0,400,520);
+//image(GIF,0,0,400,520);
 
  // Clear the screen each frame
     // Change background color based on touch state
     if (isCurrentlyTouching) 
     {
         touchDuration = (millis() - touchStartTime) / 1000;  // Convert to seconds
-        text("TOUCHED",width/2,height/2);
+        //text("TOUCHED",width/2,height/2);
         
         // Display the touch duration
         textSize(24);
@@ -49,7 +49,7 @@ image(GIF,0,0,400,520);
     } 
     else 
     {
-        text("NOT TOUCHED",width/2,height/2); 
+        //text("NOT TOUCHED",width/2,height/2); 
     }
     
     // Show the touch counter at the top of the screen
