@@ -33,7 +33,7 @@ function draw()
 background(200,50,10);
 
 
-//image(GIF,0,0,400,520);
+image(GIF,0,0,400,520);
 
  // Clear the screen each frame
     // Change background color based on touch state
