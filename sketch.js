@@ -37,20 +37,20 @@ background(200,50,10);
 
  // Clear the screen each frame
     // Change background color based on touch state
-    if (isCurrentlyTouching) 
-    {
-        touchDuration = (millis() - touchStartTime) / 1000;  // Convert to seconds
-        //text("TOUCHED",width/2,height/2);
+    // if (isCurrentlyTouching) 
+    // {
+    //     touchDuration = (millis() - touchStartTime) / 1000;  // Convert to seconds
+    //     //text("TOUCHED",width/2,height/2);
         
-        // Display the touch duration
-        textSize(24);
-        text("Touch Time: " + touchDuration.toFixed(1) + "s", width/2, height/2 + 60);
-        textSize(48);  // Reset to original size
-    } 
-    else 
-    {
-        //text("NOT TOUCHED",width/2,height/2); 
-    }
+    //     // Display the touch duration
+    //     textSize(24);
+    //     text("Touch Time: " + touchDuration.toFixed(1) + "s", width/2, height/2 + 60);
+    //     textSize(48);  // Reset to original size
+    // } 
+    // else 
+    // {
+    //     //text("NOT TOUCHED",width/2,height/2); 
+    // }
     
     // Show the touch counter at the top of the screen
     textSize(32);  // Smaller text for the counter
