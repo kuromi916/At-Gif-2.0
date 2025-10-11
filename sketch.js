@@ -9,7 +9,7 @@ let GIF;
 
 function preload()
 {
-	GIF=loadImage("gif.GIF");
+	GIF=loadImage("DraftGif.GIF");
 }
 
 function setup() 
@@ -30,7 +30,7 @@ function setup()
 
 function draw()
 {
-background(200,50,10);
+background(100,0,200);
 
 
 image(GIF,0,0,400,520); 
