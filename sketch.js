@@ -18,7 +18,7 @@ function preload()
   BG=loadImage("BG.PNG");
 	gifFASTEST=loadImage("GIF.GIF"); // the quickest delay value that set a limit of how fast the gif can play 
   gifSLOW = loadImage("GIF.GIF"); // the base delay value that plays the gif at the slowest speed possible
-  Drop =loadImage("Drop.PNG");
+
 }
 
 function setup() 
