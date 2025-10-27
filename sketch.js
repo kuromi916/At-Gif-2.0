@@ -23,7 +23,7 @@ function preload()
 
 function setup() 
 {
-	createCanvas(600,windowHeight);
+	createCanvas(windowWidth,windowHeight);
   
   lockGestures();
   //Lock mobile gestures to prevent browser interference
