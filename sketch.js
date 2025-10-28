@@ -31,11 +31,11 @@ function setup()
   //Lock mobile gestures to prevent browser interference
   //This function comes from the mobile-p5-permissions library
   
-  showDebug();
-  debug("Touch Basic - Minimal Version");
-  debug("Touch the screen to see data in this panel");
+ // showDebug();
+  //debug("Touch Basic - Minimal Version");
+  //debug("Touch the screen to see data in this panel");
   // Show debug panel FIRST to display all touch data
-  //gifFAST.resize(500,720);
+  
 
   gifFASTEST.delay(10);
 
@@ -53,7 +53,7 @@ function draw(){
 
 if (isCurrentlyTouching === true && touchDuration < 1 ){ //&& touchDuration < 1
   gifFASTEST.delay(playSpeed -= 1);
-  debug('winning!!!!!!!!!!!!!!!!!!!!!!');
+  //debug('winning!!!!!!!!!!!!!!!!!!!!!!');
 }
 
 if (touchDuration === 0.5){ 
@@ -69,7 +69,7 @@ if (isCurrentlyTouching === false){
 
 playSpeed = constrain(playSpeed, 10, 100);
 
-debug(playSpeed);
+//debug(playSpeed);
 gifFASTEST.delay(playSpeed);
 
 
@@ -85,7 +85,7 @@ function touchStarted()
   isCurrentlyTouching = true;
   touchCounter = touchCounter + 1;
   touchStartTime = millis();
-  debug("Touch Count: " + touchCounter);  
+  //debug("Touch Count: " + touchCounter);  
   return false;  // Prevents default behavior
 }
 
@@ -93,8 +93,8 @@ function touchEnded()
 {
     isCurrentlyTouching = false;
     // Output final touch duration to debug panel
-    debug("Touch Duration: " + touchDuration.toFixed(2) + " seconds");
-    debug("--- Touch Ended ---");
+    //debug("Touch Duration: " + touchDuration.toFixed(2) + " seconds");
+    //debug("--- Touch Ended ---");
     return false;  // Prevents default behavior
 }
 
