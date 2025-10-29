@@ -4,6 +4,7 @@
 let gifFASTEST;
 let BG;
 let Title;
+let sign;
 
 // Global variables for touch state
 let isCurrentlyTouching = false;  // NEEDED - Track if screen is being touched
@@ -18,6 +19,7 @@ function preload()
 {
   BG=loadImage("BG.PNG");
   Title = loadImage("Title.PNG");
+  sign = loadImage("sign.PNG");
 	gifFASTEST=loadImage("GIF.GIF"); // the quickest delay value that set a limit of how fast the gif can play 
   gifSLOW = loadImage("GIF.GIF"); // the base delay value that plays the gif at the slowest speed possible
 
@@ -75,6 +77,7 @@ gifFASTEST.delay(playSpeed);
 
 image(BG, width/2,height/2,width,height);
 image(Title, width/2,60,400,165);
+image(sign,910,650,300,350);
 image(gifFASTEST,width/2,height/2,500,720,);
 
 }
