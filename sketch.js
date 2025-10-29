@@ -21,8 +21,7 @@ function preload()
   Title = loadImage("Title.PNG");
   sign = loadImage("sign.PNG");
 	gifFASTEST=loadImage("GIF.GIF"); // the quickest delay value that set a limit of how fast the gif can play 
-  gifSLOW = loadImage("GIF.GIF"); // the base delay value that plays the gif at the slowest speed possible
-
+ 
 }
 
 function setup() 
@@ -77,7 +76,7 @@ gifFASTEST.delay(playSpeed);
 
 image(BG, width/2,height/2,width,height);
 image(Title, width/2,60,400,165);
-image(sign,width/2,650,300,350);
+image(sign,830,750,300,350);
 image(gifFASTEST,width/2,height/2,500,720,);
 
 }
