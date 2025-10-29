@@ -77,7 +77,7 @@ gifFASTEST.delay(playSpeed);
 
 image(BG, width/2,height/2,width,height);
 image(Title, width/2,60,400,165);
-image(sign,910,650,300,350);
+image(sign,width/2,650,300,350);
 image(gifFASTEST,width/2,height/2,500,720,);
 
 }
